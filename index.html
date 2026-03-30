@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ASHWIYA ARIF SHAIK | Portfolio</title>
+
+<style>
+:root {
+    --bg:#0f172a;
+    --text:#e2e8f0;
+    --card:#1e293b;
+    --accent:#38bdf8;
+}
+.light-mode {
+    --bg:#f8fafc;
+    --text:#0f172a;
+    --card:#e2e8f0;
+}
+body {
+    margin:0;
+    font-family:sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    transition:0.3s;
+}
+
+/* NAVBAR */
+nav {
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    position:sticky;
+    top:0;
+    background:var(--bg);
+}
+nav a {
+    color:var(--accent);
+    margin:0 10px;
+    text-decoration:none;
+}
+
+/* HERO */
+header {
+    text-align:center;
+    padding:60px 20px;
+}
+h1 { color:var(--accent); }
+
+/* TYPEWRITER */
+#typing {
+    border-right:2px solid;
+    display:inline;
+    padding-right:5px;
+}
+
+/* SECTIONS */
+.section {
+    max-width:900px;
+    margin:auto;
+    padding:30px;
+}
+.card {
+    background:var(--card);
+    padding:20px;
+    border-radius:10px;
+    margin:15px 0;
+    transition:0.3s;
+}
+.card:hover { transform:translateY(-5px); }
+
+/* SKILLS */
+.skill {
+    margin:10px 0;
+}
+.bar {
+    background:#334155;
+    border-radius:5px;
+}
+.progress {
+    background:var(--accent);
+    padding:5px;
+    border-radius:5px;
+}
+
+/* BUTTON */
+button {
+    background:var(--accent);
+    border:none;
+    padding:10px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* TOGGLE */
+.toggle {
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+.project-list {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.project-list li {
+    margin-bottom: 8px;
+    display: list-item !important;   /* 🔥 fixes line issue */
+    white-space: normal !important;  /* 🔥 allows wrapping */
+}
+
+</style>
+</head>
+
+<body>
+
+<button class="toggle" onclick="toggleMode()">🌙</button>
+
+<nav>
+<div>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#tools">Technologies & Tools</a>
+    <a href="#projects">Projects</a>
+</div>
+<div>
+    <a href="#contact">Contact</a>
+</div>
+</nav>
+
+<header>
+    <h1>SHAIK ASHWIYA ARIF</h1>
+    <p id="typing"></p>
+    <br><br>
+    <a href="resume.pdf" download><button>Download Resume 📄</button></a>
+</header>
+
+<div class="section" id="about">
+<h2>About 👤</h2>
+<div class="card">
+<p>I am a B.Tech student specializing in Artificial Intelligence and Machine Learning with a strong interest in building real-world technology solutions. I have hands-on experience with Python, Java, and UI/UX design using Figma. I enjoy solving problems, learning new technologies, and working on innovative projects that create meaningful impact. I am currently seeking opportunities to apply my skills and grow as a developer.</p>
+</div>
+</div>
+
+<div class="section" id="education">
+<h2>Education 🎓</h2>
+<div class="card">
+<p>B.Tech CSE(AIML)<br>VIT-AP<br>2024–2028</p>
+<p>Class 12<br>V. S. St. John's Hr. Sec. School<br>2024</p>
+<p>Class 10<br>V. S. St. John's Hr. Sec. School<br>2022</p>
+</div>
+</div>
+
+<div class="section" id="skills">
+<h2>Skills 💻</h2>
+
+<div class="skill">
+<p>Python</p>
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+<p>R</p>
+<div class="bar"><div class="progress" style="width:95%"></div></div>
+</div>
+
+<div class="skill">
+<p>Java</p>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>Machine Learning</p>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>DSA</p>
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+<p>SQL</p>
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+</div>
+
+<div class="section" id="tools">
+<h2>Tools & Technologies ⚙️</h2>
+<div class="card">
+<p>🤖Scikit-Learn</p>
+<p>🔗GitHub</p>
+<p>🎨Figma</p>
+<p>💻Canva</p>
+<p>📊MATLAB</p>
+</div>
+</div>
+
+<div class="section" id="projects">
+<h2>Projects 🚀</h2>
+
+<div class="card">
+<h3>AI Travel Planner</h3>
+<ul class="project-list">
+    <li>Developed an AI-based travel planning system generating personalized itineraries</li>
+    <li>Integrated weather, crowd data, and seasonal trends</li>
+    <li>Built recommendation features for nearby places, hotels, and restaurants</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>Lost and Found Management System</h3>
+<ul class="project-list">
+    <li>Developed a centralized web-based platform to report and recover lost items</li>
+    <li>Designed categorized listings (documents, money, accessories) for efficient search</li>
+    <li>Implemented claim verification system to improve authenticity and reduce false claims</li>
+    <li>Built separate “Lost” and “Found” sections for better usability</li>
+</ul>
+</div>
+
+</div>
+
+<div class="section">
+<h2>Certifications 📜</h2>
+<div class="card">
+<p>Fundamentals of AI</p>
+<p>Quantum Computing</p>
+<p>Marketing Analytics</p>
+</div>
+</div>
+
+<div class="section">
+<h2>Achievements 🏆</h2>
+<div class="card">
+<div class="section" id="achievements">
+   
+
+    <div class="badge-container">
+
+        <div class="badge">🚀 Organizing Hackathons</div>
+        <div class="badge">💭 Participated in Ideathon</div>
+        <div class="badge">🥈 2nd Rank – Class 12 Boards (CBSE) (School Level)</div>
+        <div class="badge">🏅 Top 10 Rank – Class 10 Boards (CBSE) (School Level)</div>
+
+    </div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<h2>Extra Curricular 🎭</h2>
+<div class="card">
+<p>Specialized Program in AIML with Drone tech - IIT Rookie (Ongoing course)</p>
+<p>Member of Event Management in CSI (Computer Society of India) Student Chapter</p>
+<p>Participated in AP State Rally in Vitopia-2026 (VIT-AP)</p>
+<p>Participated in Molicul Fest-2023 (V. S. St. John's Hr. Sec. School)</p>
+<p>Active in tech activities</p>
+
+</div>
+</div>
+
+<div class="section" id="contact">
+<h2>Contact 📞</h2>
+<div class="card">
+<p>Email: angelashwiya@gmail.com</p>
+<p>Phone: +91 9912736346</p>
+<p>
+    <a href="https://www.linkedin.com/in/ashwiya-arif-shaik-668454333?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="blank"> LinkedIn Profile🔗
+        </a>
+    </p>
+</div> 
+</div>
+
+<script>
+// DARK MODE
+function toggleMode(){
+    document.body.classList.toggle("light-mode");
+}
+
+// TYPING EFFECT
+let text="AI/ML Student | Build Models | Train Models";
+let i=0;
+function typing(){
+    if(i<text.length){
+        document.getElementById("typing").innerHTML+=text.charAt(i);
+        i++;
+        setTimeout(typing,50);
+    }
+}
+typing();
+</script>
+
+</body>
+</html>
